@@ -1,0 +1,21 @@
+{
+  "name": "server",
+  "author": "Nick Bucciarelli",
+  "version": "0.1.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -r dotenv/config server",
+    "seed": "node ./scripts/seed"
+  },
+  "devDependencies": {
+    "dotenv": "^4.0.0",
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "express": "^4.14.1",
+    "pouchdb": "^6.1.2",
+    "ramda": "^0.23.0"
+  }
+}
