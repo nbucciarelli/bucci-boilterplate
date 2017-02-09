@@ -1,4 +1,4 @@
-This is a work in progress.
+This is an educational project and will continue to be a work in progress.
 
 ### Client
 
