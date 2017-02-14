@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as counterActions from '../../actions/counter';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import RaisedButton from 'material-ui/RaisedButton';
 class Counter extends Component {
   constructor(props) {
@@ -13,14 +12,10 @@ class Counter extends Component {
   render() {
     return (
       <div className="Counter">
-        <MuiThemeProvider>
-          <RaisedButton label="+" onTouchTap={() => this.props.actions.increment()}>
-          </RaisedButton>
-        </MuiThemeProvider>
-        <MuiThemeProvider>
-          <RaisedButton label="-" onTouchTap={() => this.props.actions.decrement()}>
-          </RaisedButton>
-        </MuiThemeProvider>
+        <RaisedButton label="+" onTouchTap={() => this.props.actions.increment()}>
+        </RaisedButton>
+        <RaisedButton label="-" onTouchTap={() => this.props.actions.decrement()}>
+        </RaisedButton>
         <p>
           {this.props.counter}
         </p>
