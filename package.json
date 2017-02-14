@@ -11,6 +11,8 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "electron": "^1.4.15",
+    "firebase": "^3.6.9",
+    "firebaseui": "^1.0.0",
     "material-ui": "^0.16.7",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
