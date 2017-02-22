@@ -1,11 +1,8 @@
-import React, { Component } from 'react';
-import { bindActionCreators } from 'redux';
-import { connect } from 'react-redux';
-import * as counterActions from '../../actions/counter';
-import RaisedButton from 'material-ui/RaisedButton';
+import React, { Component } from 'react'
+import RaisedButton from 'material-ui/RaisedButton'
 class Counter extends Component {
   constructor(props) {
-    super(props);
+    super(props)
     this.state = {
     }
   }
@@ -20,17 +17,8 @@ class Counter extends Component {
           {this.props.counter}
         </p>
       </div>
-    );
+    )
   }
 }
-function mapStateToProps(state, props) {
-  return {
-      counter: state.counter
-  };
-}
-function mapDispatchToProps(dispatch) {
-  return {
-    actions: bindActionCreators(counterActions, dispatch)
-  }
-}
-export default connect(mapStateToProps, mapDispatchToProps)(Counter);
+
+export default Counter
